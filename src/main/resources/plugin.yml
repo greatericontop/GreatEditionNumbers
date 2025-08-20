@@ -1,0 +1,5 @@
+name: GreatEditionNumbers
+version: "${project.version}"
+main: io.github.greatericontop.greateditionnumbers.GreatEditionNumbers
+api-version: 1.19
+authors: [greateric]
