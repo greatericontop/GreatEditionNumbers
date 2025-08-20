@@ -6,5 +6,9 @@ tracked:
 - "minecraft:a_recipe_to_add_edition_numbers"
 - "minecraft:a_recipe_number_2"
 
+# Whether to skip giving edition numbers to creative players when they craft something
+skip-creative-players: true
+
+
 # Internal storage used by plugin. Don't edit unless you're sure you know what you're doing!
 _data_: {}
