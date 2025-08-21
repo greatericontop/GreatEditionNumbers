@@ -2,6 +2,8 @@
 
 
 # The Minecraft IDs of the items to track and add edition numbers to.
+# Don't know the Minecraft ID of a recipe? Use the command `/recipe give @s ...` and you can use that list to help
+# you find what it is.
 tracked:
 - "minecraft:a_recipe_to_add_edition_numbers"
 - "minecraft:a_recipe_number_2"
