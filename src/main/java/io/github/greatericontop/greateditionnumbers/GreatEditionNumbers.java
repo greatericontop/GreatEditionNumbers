@@ -13,7 +13,7 @@ public class GreatEditionNumbers extends JavaPlugin {
         this.saveDefaultConfig();
         this.getConfig().options().copyDefaults(true);
         this.saveConfig();
-        trackedRecipes = this.getConfig().getStringList("tracked-recipes");
+        trackedRecipes = this.getConfig().getStringList("tracked");
 
         this.getServer().getPluginManager().registerEvents(new CraftingListener(this), this);
 
