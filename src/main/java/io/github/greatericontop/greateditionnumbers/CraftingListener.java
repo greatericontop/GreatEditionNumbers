@@ -49,7 +49,10 @@ public class CraftingListener implements Listener {
         if (lore == null) {
             lore = new ArrayList<>();
         }
-        lore.add(String.format("§7Edition #%s%,d", count == 1 ? "§c" : "§f", count));
+        String obf1 = count == 1 ? "§e§k**§r " : "";
+        String obf2 = count == 1 ? " §e§k**" : "";
+        String color = count == 1 ? "§c" : "§f";
+        lore.add(String.format("%s§7Edition #%s%,d%s", obf1, color, count, obf2));
         im.setLore(lore);
         stack.setItemMeta(im);
         event.getInventory().setResult(stack);
