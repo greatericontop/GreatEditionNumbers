@@ -30,7 +30,6 @@ public class CraftingListener implements Listener {
         } else {
             return; // not a recipe we care about
         }
-        event.getWhoClicked().sendMessage("§7debug stringkey="+stringKey);
         if (!plugin.trackedRecipes.contains(stringKey))  return;
         if (plugin.getConfig().getBoolean("skip-creative-players") && event.getWhoClicked().getGameMode() == GameMode.CREATIVE)  return;
         String configLocation = String.format("_data_.%s", stringKey);
@@ -57,7 +56,6 @@ public class CraftingListener implements Listener {
         stack.setItemMeta(im);
         event.getInventory().setResult(stack);
         plugin.getConfig().set(configLocation, count);
-        event.getWhoClicked().sendMessage("§7debug finished event handler");
     }
 
 }

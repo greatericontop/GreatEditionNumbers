@@ -22,6 +22,12 @@ public class GreatEditionNumbers extends JavaPlugin {
         this.getLogger().info("GreatEditionNumbers finished setting up!");
     }
 
+    @Override
+    public void onDisable() {
+        saveAll();
+        this.getLogger().info("Everything is saved!");
+    }
+
     private void saveAll() {
         this.saveConfig();
     }
