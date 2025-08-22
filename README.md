@@ -1,6 +1,6 @@
 # GreatEditionNumbers
 
-((((get a gif))))
+![Demo](https://raw.githubusercontent.com/greatericontop/GreatEditionNumbers/main/assets/demo.gif)
 
 This plugin adds an edition number to the crafting recipes you choose.
 The first time a crafting recipe is made on a server, it will be given edition #1, and then the second gets #2, and so on.
